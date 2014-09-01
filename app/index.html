@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JsBlog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/js-blog.css">
+  </head>
+  <body>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/js-blog.js"></script>
+    <script>
+      window.JsBlogENV = require('js-blog/config/environment')['default'];
+      window.EmberENV = window.JsBlogENV.EmberENV;
+      window.JsBlog = require('js-blog/app')['default'].create(JsBlogENV.APP);
+    </script>
+  </body>
+</html>
