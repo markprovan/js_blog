@@ -1,0 +1,8 @@
+{{#each controller}}
+<div class="panel">
+  <h1>{{#link-to "post" this}}{{title}}{{/link-to}}</h1>
+    <p>
+      {{{bodyAsMarkdown}}}
+    </p> 
+</div>
+{{/each}}

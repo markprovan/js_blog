@@ -4,6 +4,10 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
+app.import("bower_components/markdown/lib/markdown.js");
+app.import("bower_components/zurb-foundation-bower/css/foundation.css")
+app.import("bower_components/zurb-foundation-bower/css/normalize.css")
+
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //

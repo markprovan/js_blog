@@ -1,0 +1,22 @@
+<h1>Create a new Post</h1>
+
+<div class="row">
+  <form>
+      <label>Title
+      {{input value=title}}
+    </label>
+  </form>
+</div>
+
+<div class="row">
+  <form>
+      {{textarea value=body height="400px"}}
+  </form>
+</div>
+
+<div class="row">
+  <label>Preview</label>
+   {{{bodyAsMarkdown}}}
+</div>
+
+<button {{action "create"}}>Create</button>
